@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b3a6f" />
+    <title>Amble Storage — Secure, Flexible Storage in North Dublin</title>
+    <meta
+      name="description"
+      content="Amble Storage offers secure, flexible self-storage in North Dublin. 24/7 access, CCTV monitoring, competitive pricing, and friendly service for homes and businesses."
+    />
+    <meta property="og:title" content="Amble Storage — Secure, Flexible Storage in North Dublin" />
+    <meta
+      property="og:description"
+      content="Secure, flexible storage in North Dublin. 24/7 access, CCTV monitoring, competitive pricing, and friendly service for homes and businesses."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SelfStorage",
+        "name": "Amble Storage",
+        "image": "images/facility.jpg",
+        "telephone": "+353 1 000 0000",
+        "email": "hello@amblestorage.ie",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "North Dublin",
+          "addressCountry": "IE"
+        },
+        "openingHours": "Mo-Su 00:00-24:00",
+        "priceRange": "€€"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="#top" class="brand" aria-label="Amble Storage home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="7" width="26" height="20" rx="3" fill="#0b3a6f" />
+              <rect x="7" y="11" width="7" height="12" rx="1.5" fill="#fff" />
+              <rect x="18" y="11" width="7" height="12" rx="1.5" fill="#fff" />
+              <rect x="3" y="5" width="26" height="4" rx="1.5" fill="#1e6ac9" />
+            </svg>
+          </span>
+          <span class="brand__name">Amble<span>Storage</span></span>
+        </a>
+
+        <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="primary-nav" class="nav__links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#solutions">Storage</a>
+          <a href="#why">Why us</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn--primary btn--sm" href="#contact">Get a quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">North Dublin · Self Storage</p>
+            <h1>Secure, Flexible Storage Solutions in North Dublin</h1>
+            <p class="lead">
+              Friendly, responsive service and clean, well-maintained units for homes and
+              businesses. We&rsquo;ll help you find the right space fast &mdash; and follow up
+              the moment one becomes available.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#availability">Check availability</a>
+              <a class="btn btn--ghost" href="#contact">Get a quote</a>
+            </div>
+            <ul class="hero__badges" aria-label="Key benefits">
+              <li><span aria-hidden="true">●</span> 24/7 access</li>
+              <li><span aria-hidden="true">●</span> CCTV monitored</li>
+              <li><span aria-hidden="true">●</span> No long-term contracts</li>
+            </ul>
+          </div>
+
+          <aside class="hero__card" aria-label="Quick availability">
+            <h2>Quick availability check</h2>
+            <p class="muted">Tell us what you need and we&rsquo;ll come back within one working day.</p>
+            <form class="avail" id="avail-form" novalidate>
+              <label>
+                Unit size
+                <select name="size" required>
+                  <option value="">Select a size</option>
+                  <option>Small — 10–25 sq ft (a few boxes)</option>
+                  <option>Medium — 25–50 sq ft (studio flat)</option>
+                  <option>Large — 50–100 sq ft (1–2 bed home)</option>
+                  <option>XL — 100+ sq ft (business / 3 bed+)</option>
+                  <option>Not sure — please advise</option>
+                </select>
+              </label>
+              <label>
+                Move-in date
+                <input type="date" name="date" required />
+              </label>
+              <label>
+                Email or phone
+                <input type="text" name="contact" placeholder="you@example.com or 08X…" required />
+              </label>
+              <button class="btn btn--primary btn--block" type="submit">Check availability</button>
+              <p class="avail__note">
+                Units fill up quickly. If nothing suits today, we&rsquo;ll add you to our
+                follow-up list and call the moment one frees up.
+              </p>
+            </form>
+            <div class="avail__success" role="status" hidden>
+              <strong>Thanks — we&rsquo;ve got it.</strong>
+              <p>We&rsquo;ll be in touch within one working day with available options.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="trust">
+        <div class="container trust__row">
+          <div class="trust__item"><strong>500+</strong><span>Happy customers</span></div>
+          <div class="trust__item"><strong>24/7</strong><span>Access, every day</span></div>
+          <div class="trust__item"><strong>CCTV</strong><span>Monitored round the clock</span></div>
+          <div class="trust__item"><strong>4.9★</strong><span>Average review score</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container section__grid">
+          <div class="section__media">
+            <img
+              src="https://images.unsplash.com/photo-1749244768351-2726dc23d26c?auto=format&fit=crop&w=1200&q=70"
+              alt="Bright, tidy storage facility aisle lined with organised shelving"
+              loading="lazy"
+              width="1200"
+              height="800"
+            />
+          </div>
+          <div class="section__copy">
+            <p class="eyebrow">About Amble Storage</p>
+            <h2>Reliable, professional, and customer-first</h2>
+            <p>
+              Amble Storage was built on a simple idea: storage should be easy. Whether
+              you&rsquo;re decluttering a family home, managing a move, or freeing up space
+              for your business, our team is here to make it straightforward — from the
+              first phone call to the day you move out.
+            </p>
+            <p>
+              We&rsquo;re proudly based in North Dublin and we treat every customer like a
+              neighbour. Expect honest advice, clear pricing, and a team that actually picks
+              up the phone.
+            </p>
+            <ul class="ticklist">
+              <li>Locally owned and operated in North Dublin</li>
+              <li>Clean, dry, well-lit units with roller-shutter doors</li>
+              <li>Friendly staff who follow up when space opens up</li>
+              <li>Simple, fast paperwork — no hidden fees</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="solutions">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Storage solutions</p>
+            <h2>Space for life &mdash; and for business</h2>
+            <p class="muted">
+              Short-term or long-term, we&rsquo;ll match you to the right unit and help you
+              make the most of it.
+            </p>
+          </header>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1758523671893-0ba21cf4260f?auto=format&fit=crop&w=900&q=70"
+                  alt="Happy couple sitting among moving boxes in their new home"
+                  loading="lazy"
+                  width="900"
+                  height="600"
+                />
+              </div>
+              <div class="card__body">
+                <h3>Personal storage</h3>
+                <p>
+                  Perfect for decluttering, moving house, renovations, or storing seasonal
+                  items. Flexible sizes from a few boxes up to a three-bed home.
+                </p>
+                <ul class="ticklist ticklist--sm">
+                  <li>Decluttering &amp; downsizing</li>
+                  <li>House moves &amp; renovations</li>
+                  <li>Students &amp; seasonal storage</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=70"
+                  alt="Business stock and documents stored on shelves in a commercial storage unit"
+                  loading="lazy"
+                  width="900"
+                  height="600"
+                />
+              </div>
+              <div class="card__body">
+                <h3>Business storage</h3>
+                <p>
+                  Free up your office or shop floor. Store stock, archives, tools, or
+                  equipment in a secure space with easy drive-up access whenever you need
+                  it.
+                </p>
+                <ul class="ticklist ticklist--sm">
+                  <li>Stock &amp; e-commerce inventory</li>
+                  <li>Archives &amp; documents</li>
+                  <li>Tools, equipment &amp; trade supplies</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="why">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Why choose Amble</p>
+            <h2>Everything you&rsquo;d expect &mdash; and a team you&rsquo;ll actually enjoy dealing with</h2>
+          </header>
+
+          <div class="features">
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>CCTV security</h3>
+              <p>24/7 CCTV monitoring, secure perimeter, and individually locked units.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3>24-hour access</h3>
+              <p>Come and go whenever it suits you &mdash; early mornings, late nights, weekends.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Simple paperwork</h3>
+              <p>A fast, professional move-in process &mdash; often same day.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M5 7h11a3 3 0 010 6H8a3 3 0 000 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Competitive pricing</h3>
+              <p>Honest, transparent rates with great value and no surprises.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 20c2-4 6-6 8-6s6 2 8 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/></svg>
+              </div>
+              <h3>Friendly, responsive team</h3>
+              <p>Real people who answer the phone, listen, and follow up when space opens.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 12l3-3 3 3 4-5 5 6 3-3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Clean &amp; well-maintained</h3>
+              <p>Dry, bright units kept in top condition &mdash; your things stay as you left them.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="testimonials">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Trusted by neighbours and local businesses</h2>
+          </header>
+
+          <div class="testimonials">
+            <figure class="testimonial testimonial--feature">
+              <blockquote>
+                <p>
+                  &ldquo;We needed space fast to turn our spare room back into a home
+                  office. Amble didn&rsquo;t have a unit free the day I called, but they
+                  took my details and rang me back less than two weeks later the moment
+                  one opened up. The paperwork took ten minutes and we had our house back
+                  the same afternoon. Honestly brilliant service.&rdquo;
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Aoife D.</strong>
+                <span>Swords, North Dublin</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote>
+                <p>
+                  &ldquo;Clean units, easy access at any hour, and the team are always
+                  helpful. Exactly what you want from a storage provider.&rdquo;
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Mark O.</strong>
+                <span>Small business owner</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote>
+                <p>
+                  &ldquo;Great value and completely hassle-free. They walked me through
+                  everything and answered every question honestly.&rdquo;
+                </p>
+              </blockquote>
+              <figcaption>
+                <strong>Niamh R.</strong>
+                <span>House move, 2024</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Pricing &amp; availability</p>
+            <h2>Transparent rates. Always ask &mdash; units move quickly.</h2>
+            <p class="muted">
+              Guide prices below. Final quotes depend on size, term, and availability.
+              Demand is high &mdash; enquire today and we&rsquo;ll hold the next matching
+              unit for you.
+            </p>
+          </header>
+
+          <div class="pricing" id="availability">
+            <article class="price">
+              <h3>Small</h3>
+              <p class="price__desc">10–25 sq ft · a few boxes, bikes, small items</p>
+              <p class="price__amount"><span>from</span> €19<small>/wk</small></p>
+              <ul class="ticklist ticklist--sm">
+                <li>Ideal for decluttering</li>
+                <li>Easy ground-floor access</li>
+              </ul>
+              <a class="btn btn--ghost btn--block" href="#contact">Enquire</a>
+            </article>
+
+            <article class="price price--featured">
+              <div class="price__tag">Most popular</div>
+              <h3>Medium</h3>
+              <p class="price__desc">25–50 sq ft · studio or 1-bed flat</p>
+              <p class="price__amount"><span>from</span> €34<small>/wk</small></p>
+              <ul class="ticklist ticklist--sm">
+                <li>Great for house moves</li>
+                <li>Fits furniture &amp; boxes</li>
+              </ul>
+              <a class="btn btn--primary btn--block" href="#contact">Enquire</a>
+            </article>
+
+            <article class="price">
+              <h3>Large</h3>
+              <p class="price__desc">50–100 sq ft · 2–3 bed home or business stock</p>
+              <p class="price__amount"><span>from</span> €59<small>/wk</small></p>
+              <ul class="ticklist ticklist--sm">
+                <li>Room for larger items</li>
+                <li>Drive-up access available</li>
+              </ul>
+              <a class="btn btn--ghost btn--block" href="#contact">Enquire</a>
+            </article>
+          </div>
+
+          <p class="pricing__note muted">
+            Need something bigger, or business storage with regular access? <a href="#contact">Talk to us</a> &mdash; we&rsquo;ll tailor a solution.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="faq">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">FAQ</p>
+            <h2>Answers to the questions we hear most</h2>
+          </header>
+
+          <div class="faq">
+            <details>
+              <summary>Can I access my unit 24/7?</summary>
+              <p>
+                Yes. All customers get secure 24-hour access, every day of the year. You
+                come and go on your schedule.
+              </p>
+            </details>
+            <details>
+              <summary>How secure is the facility?</summary>
+              <p>
+                The site is monitored by CCTV around the clock, with a secure perimeter
+                and individually locked units. You&rsquo;re the only one with a key.
+              </p>
+            </details>
+            <details>
+              <summary>How long do I need to commit for?</summary>
+              <p>
+                There&rsquo;s no long-term contract. Store for as little as a week, or as
+                long as you need &mdash; just give simple notice when you&rsquo;re ready
+                to move out.
+              </p>
+            </details>
+            <details>
+              <summary>What if the size I want isn&rsquo;t available?</summary>
+              <p>
+                Pop your details on our follow-up list. We&rsquo;ll call you the moment a
+                matching unit frees up &mdash; often within a couple of weeks.
+              </p>
+            </details>
+            <details>
+              <summary>How quickly can I move in?</summary>
+              <p>
+                Often the same day. The paperwork is short and professional, and our team
+                will walk you through everything on the spot.
+              </p>
+            </details>
+            <details>
+              <summary>Can businesses receive deliveries to their unit?</summary>
+              <p>
+                Yes &mdash; many of our business customers use us as a stockroom. Chat to
+                us about delivery arrangements and we&rsquo;ll make it work.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container section__grid section__grid--reverse">
+          <div class="section__copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Get in touch &mdash; we&rsquo;ll reply within one working day</h2>
+            <p>
+              Call, email, or send us a quick enquiry. Whether you know exactly what you
+              need or want a hand figuring it out, we&rsquo;re happy to help.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-list__label">Phone</span>
+                <a href="tel:+35310000000">+353 1 000 0000</a>
+              </li>
+              <li>
+                <span class="contact-list__label">Email</span>
+                <a href="mailto:hello@amblestorage.ie">hello@amblestorage.ie</a>
+              </li>
+              <li>
+                <span class="contact-list__label">Location</span>
+                <span>North Dublin, Ireland</span>
+              </li>
+              <li>
+                <span class="contact-list__label">Hours</span>
+                <span>Office Mon–Sat · Unit access 24/7</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form card card--pad" id="contact-form" novalidate>
+            <h3>Send an enquiry</h3>
+            <div class="form__row">
+              <label>
+                Name
+                <input name="name" type="text" required autocomplete="name" />
+              </label>
+              <label>
+                Phone
+                <input name="phone" type="tel" autocomplete="tel" />
+              </label>
+            </div>
+            <label>
+              Email
+              <input name="email" type="email" required autocomplete="email" />
+            </label>
+            <label>
+              How can we help?
+              <textarea name="message" rows="4" placeholder="Tell us a little about what you'd like to store…" required></textarea>
+            </label>
+            <button class="btn btn--primary btn--block" type="submit">Send enquiry</button>
+            <p class="form__note">We&rsquo;ll never share your details. By sending an enquiry you agree to be contacted about your request.</p>
+            <div class="form__success" role="status" hidden>
+              <strong>Thanks!</strong>
+              <p>Your enquiry is with us. We&rsquo;ll be in touch within one working day.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a href="#top" class="brand brand--light">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="24" height="24" fill="none"><rect x="3" y="7" width="26" height="20" rx="3" fill="#fff"/><rect x="7" y="11" width="7" height="12" rx="1.5" fill="#0b3a6f"/><rect x="18" y="11" width="7" height="12" rx="1.5" fill="#0b3a6f"/><rect x="3" y="5" width="26" height="4" rx="1.5" fill="#1e6ac9"/></svg>
+            </span>
+            <span class="brand__name">Amble<span>Storage</span></span>
+          </a>
+          <p class="muted">Secure, flexible self-storage in North Dublin.</p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#solutions">Storage solutions</a></li>
+            <li><a href="#why">Why choose us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+35310000000">+353 1 000 0000</a></li>
+            <li><a href="mailto:hello@amblestorage.ie">hello@amblestorage.ie</a></li>
+            <li>North Dublin, Ireland</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <small>© <span id="year"></span> Amble Storage. All rights reserved.</small>
+        <small>Designed for trust, built for speed.</small>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
